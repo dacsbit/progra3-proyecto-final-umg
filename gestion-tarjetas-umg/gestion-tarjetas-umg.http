@@ -1,0 +1,6 @@
+@gestion_tarjetas_umg_HostAddress = http://localhost:5298
+
+GET {{gestion_tarjetas_umg_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
