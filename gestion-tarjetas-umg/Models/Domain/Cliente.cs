@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
+﻿using gestion_tarjetas_umg.Models.Interfaces;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace gestion_tarjetas_umg.Models.Domain
 {
-    public class Cliente
+    public class Cliente : Comparador<Cliente>
     {
         public required string nombre { get; set; }
         public required long dpi { get; set; }
@@ -20,6 +21,21 @@ namespace gestion_tarjetas_umg.Models.Domain
         public Cliente()
         {
             Tarjetas = new List<Tarjeta>();
+        }
+
+        bool Comparador<Cliente>.MayorQue(Cliente valor)
+        {
+            return this.dpi > valor.dpi;
+        }
+
+        bool Comparador<Cliente>.MenorQue(Cliente valor)
+        {
+            return this.dpi < valor.dpi;
+        }
+
+        bool Comparador<Cliente>.IgualQue(Cliente valor)
+        {
+            return this.dpi == valor.dpi;
         }
     }
 }

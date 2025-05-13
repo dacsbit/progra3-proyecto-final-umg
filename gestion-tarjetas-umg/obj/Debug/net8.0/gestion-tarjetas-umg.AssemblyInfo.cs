@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gestion-tarjetas-umg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecc40654d1471c68584a28142ec108b3bdec70b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7593b7d6e76f04269b708253159d0117366f1a56")]
 [assembly: System.Reflection.AssemblyProductAttribute("gestion-tarjetas-umg")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gestion-tarjetas-umg")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

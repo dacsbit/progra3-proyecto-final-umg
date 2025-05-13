@@ -1,4 +1,6 @@
-﻿namespace gestion_tarjetas_umg.Models.Domain
+﻿using gestion_tarjetas_umg.Models.Interfaces;
+
+namespace gestion_tarjetas_umg.Models.Domain
 {
     public class Tarjeta
     {
