@@ -48,7 +48,8 @@ namespace gestion_tarjetas_umg.Services
                         mesExp = tarjetaDTO.mesExp,
                         anioExp = tarjetaDTO.anioExp,
                         nombreTarjeta = tarjetaDTO.nombreTarjeta,
-                        red = tarjetaDTO.red
+                        red = tarjetaDTO.red,
+                        pin = tarjetaDTO.pin
                     };
 
                     foreach (var transaccionDTO in tarjetaDTO.transacciones)
@@ -63,7 +64,7 @@ namespace gestion_tarjetas_umg.Services
                             descripcion = transaccionDTO.descripcion
                         };
 
-                        //tarjeta.Transacciones.Add(transaccion);
+                        tarjeta.transacciones.Agregar(transaccion);
                     }
 
                     cliente.Tarjetas.Add(tarjeta);

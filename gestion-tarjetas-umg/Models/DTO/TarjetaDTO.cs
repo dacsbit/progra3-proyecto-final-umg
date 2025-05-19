@@ -8,6 +8,7 @@
         public int anioExp { get; set; }
         public string nombreTarjeta { get; set; }
         public string red { get; set; }
+        public int pin { get; set; }
         public List<TransaccionDTO> transacciones { get; set; }
     }
 }

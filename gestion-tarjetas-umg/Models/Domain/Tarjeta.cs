@@ -1,4 +1,5 @@
 ﻿using gestion_tarjetas_umg.Models.Interfaces;
+using gestion_tarjetas_umg.Models.Estructuras.Listas;
 
 namespace gestion_tarjetas_umg.Models.Domain
 {
@@ -10,12 +11,13 @@ namespace gestion_tarjetas_umg.Models.Domain
         public required int anioExp { get; set; }
         public required string nombreTarjeta { get; set; }
         public required string red { get; set; }
+        public required int pin {  get; set; }
 
-        public List<Transaccion> transacciones { get; set; }
+        public ListaSimple<Transaccion> transacciones { get; set; }
 
         public Tarjeta()
         {
-            transacciones = new List<Transaccion>();
+            transacciones = new ListaSimple<Transaccion>();
         }
     }
 }

@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\Estructuras\Arboles\ABB\" />
     <Folder Include="Models\Estructuras\Listas\" />
     <Folder Include="Models\Estructuras\TablasHash\" />
   </ItemGroup>

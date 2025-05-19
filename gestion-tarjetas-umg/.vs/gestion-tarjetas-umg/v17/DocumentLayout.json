@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\estructuras\\arboles\\avl\\arbolavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\estructuras\\arboles\\avl\\arbolavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\estructuras\\arboles\\avl\\nodoavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\estructuras\\arboles\\avl\\nodoavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\interfaces\\comparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\interfaces\\comparador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\domain\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\services\\memoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:services\\memoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\estructuras\\arboles\\avl\\arbolavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\estructuras\\arboles\\avl\\arbolavl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\domain\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\domain\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\domain\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\services\\dataloaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:services\\dataloaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\estructuras\\arboles\\abb\\nodoabb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\estructuras\\arboles\\abb\\nodoabb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|c:\\users\\dacs_\\documents\\repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\models\\estructuras\\arboles\\abb\\arbolabb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0EF2B1-0923-4D6F-A62E-36D25FEE7B78}|gestion-tarjetas-umg.csproj|solutionrelative:models\\estructuras\\arboles\\abb\\arbolabb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +50,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MemoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Services\\MemoriaService.cs",
+              "RelativeDocumentMoniker": "Services\\MemoriaService.cs",
+              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Services\\MemoriaService.cs",
+              "RelativeToolTip": "Services\\MemoriaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T18:10:08.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\DTO\\ClienteDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\ClienteDTO.cs",
+              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\DTO\\ClienteDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\ClienteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:33:26.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataLoaderService.cs",
+              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Services\\DataLoaderService.cs",
+              "RelativeDocumentMoniker": "Services\\DataLoaderService.cs",
+              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Services\\DataLoaderService.cs",
+              "RelativeToolTip": "Services\\DataLoaderService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwA4AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:46:45.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ArbolAbb.cs",
+              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\ABB\\ArbolAbb.cs",
+              "RelativeDocumentMoniker": "Models\\Estructuras\\Arboles\\ABB\\ArbolAbb.cs",
+              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\ABB\\ArbolAbb.cs",
+              "RelativeToolTip": "Models\\Estructuras\\Arboles\\ABB\\ArbolAbb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:10:37.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NodoAbb.cs",
+              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\ABB\\NodoAbb.cs",
+              "RelativeDocumentMoniker": "Models\\Estructuras\\Arboles\\ABB\\NodoAbb.cs",
+              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\ABB\\NodoAbb.cs",
+              "RelativeToolTip": "Models\\Estructuras\\Arboles\\ABB\\NodoAbb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T03:08:18.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Domain\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Usuario.cs",
@@ -51,26 +128,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Tarjeta.cs",
               "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Domain\\Tarjeta.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Tarjeta.cs",
               "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Domain\\Tarjeta.cs",
               "RelativeToolTip": "Models\\Domain\\Tarjeta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T17:49:25.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T17:49:25.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Domain\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Cliente.cs",
               "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Domain\\Cliente.cs",
               "RelativeToolTip": "Models\\Domain\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T17:45:24.42Z",
               "EditorCaption": ""
@@ -83,36 +159,22 @@
               "RelativeDocumentMoniker": "Models\\Interfaces\\Comparador.cs",
               "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Interfaces\\Comparador.cs",
               "RelativeToolTip": "Models\\Interfaces\\Comparador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T17:43:45.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ArbolAvl.cs",
               "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\AVL\\ArbolAvl.cs",
               "RelativeDocumentMoniker": "Models\\Estructuras\\Arboles\\AVL\\ArbolAvl.cs",
               "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\AVL\\ArbolAvl.cs",
               "RelativeToolTip": "Models\\Estructuras\\Arboles\\AVL\\ArbolAvl.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwFwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAswM4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T17:15:47.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NodoAvl.cs",
-              "DocumentMoniker": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\AVL\\NodoAvl.cs",
-              "RelativeDocumentMoniker": "Models\\Estructuras\\Arboles\\AVL\\NodoAvl.cs",
-              "ToolTip": "C:\\Users\\dacs_\\Documents\\Repos\\progra3-proyecto-final-umg\\gestion-tarjetas-umg\\Models\\Estructuras\\Arboles\\AVL\\NodoAvl.cs",
-              "RelativeToolTip": "Models\\Estructuras\\Arboles\\AVL\\NodoAvl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T17:12:30.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T17:15:47.772Z"
             }
           ]
         }
