@@ -1,6 +1,6 @@
 ﻿namespace gestion_tarjetas_umg.Models.DTO
 {
-    internal class ClienteDTO
+    public class ClienteDTO
     {
         public string? nombre { get; set; }
         public long dpi { get; set; }

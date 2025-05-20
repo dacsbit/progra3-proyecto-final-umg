@@ -225,5 +225,20 @@ namespace gestion_tarjetas_umg.Models.Estructuras.Arboles.AVL
             //si el valor no existe no se puede eliminar, por lo tanto no se puede modificar
             return false;
         }
+
+        public List<T> ToList()
+        {
+            List<T> lista = new();
+            InOrden(raiz, lista);
+            return lista;
+        }
+
+        public void InOrden(NodoAvl<T>? subRaiz, List<T> lista)
+        {
+            if (subRaiz == null) return;
+            InOrden(subRaiz.izq, lista);
+            lista.Add(subRaiz.valor);
+            InOrden(subRaiz.der, lista);
+        }
     }
 }

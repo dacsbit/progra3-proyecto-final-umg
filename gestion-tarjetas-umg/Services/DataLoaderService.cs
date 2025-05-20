@@ -6,6 +6,13 @@ namespace gestion_tarjetas_umg.Services
 {
     public class DataLoaderService
     {
+        public readonly MemoriaService _memoriaService;
+
+        public DataLoaderService(MemoriaService memoriaService)
+        {
+            _memoriaService = memoriaService;
+        }
+
         public void CargarDatosIniciales(string jsonFilePath)
         {
             // Leer el archivo JSON
@@ -71,9 +78,8 @@ namespace gestion_tarjetas_umg.Services
                 }
 
                 // Guardar en estructuras de datos
-                //_clientesPorDPI.Insert(cliente.DPI, cliente);
-                //_clientesPorEmail.Insert(cliente.Email, cliente);
-                //_usuariosPorNombre.Insert(usuario.NombreUsuario, usuario);
+                _memoriaService.tHashUsuarios.Insertar(usuario.claveUnica, usuario);
+                _memoriaService.arbolClientes.Insertar(cliente);
             }
         }
     }

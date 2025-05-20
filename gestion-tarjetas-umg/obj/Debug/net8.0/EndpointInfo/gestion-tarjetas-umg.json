@@ -5,41 +5,54 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
-      "get": {
+    "/api/Cliente/cargaInicial": {
+      "post": {
         "tags": [
-          "WeatherForecast"
+          "Cliente"
         ],
-        "operationId": "GetWeatherForecast",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ClienteDTO"
                 }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ClienteDTO"
                 }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ClienteDTO"
                 }
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/listado": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -47,23 +60,125 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "ClienteDTO": {
         "type": "object",
         "properties": {
-          "date": {
+          "nombre": {
             "type": "string",
-            "format": "date"
+            "nullable": true
           },
-          "temperatureC": {
+          "dpi": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nit": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "listaTarjetas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TarjetaDTO"
+            },
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/UsuarioDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TarjetaDTO": {
+        "type": "object",
+        "properties": {
+          "numeroTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
+          "anioExp": {
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "format": "int32"
           },
-          "summary": {
+          "nombreTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "red": {
+            "type": "string",
+            "nullable": true
+          },
+          "pin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "transacciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TransaccionDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransaccionDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "montoCredito": {
+            "type": "number",
+            "format": "double"
+          },
+          "montoDebito": {
+            "type": "number",
+            "format": "double"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDTO": {
+        "type": "object",
+        "properties": {
+          "nombreUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrasena": {
             "type": "string",
             "nullable": true
           }
