@@ -5,5 +5,6 @@
         public bool MayorQue(T valor);
         public bool MenorQue(T valor);
         public bool IgualQue(T valor);
+        public void Actualizar(T valor);
     }
 }

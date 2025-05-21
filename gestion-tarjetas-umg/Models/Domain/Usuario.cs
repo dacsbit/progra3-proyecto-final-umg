@@ -31,6 +31,12 @@ namespace gestion_tarjetas_umg.Models.Domain
             return this.nombreUsuario.CompareTo(valor.nombreUsuario) > 0;
         }
 
+        void Comparador<Usuario>.Actualizar(Usuario valor)
+        {
+            this.nombreUsuario = valor.nombreUsuario;
+            this.contrasena = valor.contrasena;
+        }
+
         public byte[] GenerarPdfDesdeLista(List<Usuario> elementos)
         {
             using MemoryStream ms = new();
@@ -56,5 +62,7 @@ namespace gestion_tarjetas_umg.Models.Domain
 
             return ms.ToArray();
         }
+
+        
     }
 }

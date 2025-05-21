@@ -1,8 +1,24 @@
 [
   {
     "ContainingType": "gestion_tarjetas_umg.Controllers.ClienteController",
-    "Method": "CargaInicial",
-    "RelativePath": "api/Cliente/cargaInicial",
+    "Method": "BuscarCliente",
+    "RelativePath": "api/Cliente/Buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dpi",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.ClienteController",
+    "Method": "CrearCliente",
+    "RelativePath": "api/Cliente/crear",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

@@ -74,7 +74,7 @@ namespace gestion_tarjetas_umg.Services
                         tarjeta.transacciones.Agregar(transaccion);
                     }
 
-                    cliente.Tarjetas.Add(tarjeta);
+                    cliente.Tarjetas.Agregar(tarjeta);
                 }
 
                 // Guardar en estructuras de datos

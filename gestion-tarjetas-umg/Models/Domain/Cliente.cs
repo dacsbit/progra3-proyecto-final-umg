@@ -4,6 +4,7 @@ using iText.Layout;
 using iText.Layout.Element;
 using System.IO;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using gestion_tarjetas_umg.Models.Estructuras.Listas;
 
 namespace gestion_tarjetas_umg.Models.Domain
 {
@@ -20,11 +21,11 @@ namespace gestion_tarjetas_umg.Models.Domain
         public Usuario? Usuario { get; set; }
 
         // Estructura personalizada para tarjetas
-        public List<Tarjeta> Tarjetas { get; set; }
+        public ListaSimple<Tarjeta> Tarjetas { get; set; }
 
         public Cliente()
         {
-            Tarjetas = new List<Tarjeta>();
+            Tarjetas = new ListaSimple<Tarjeta>();
         }
 
         bool Comparador<Cliente>.MayorQue(Cliente valor)
@@ -40,6 +41,16 @@ namespace gestion_tarjetas_umg.Models.Domain
         bool Comparador<Cliente>.IgualQue(Cliente valor)
         {
             return this.dpi == valor.dpi;
+        }
+
+        void Comparador<Cliente>.Actualizar(Cliente valor)
+        {
+            this.nombre = valor.nombre;
+            this.dpi = valor.dpi;
+            this.nit = valor.nit;
+            this.telefono = valor.telefono;
+            this.direccion = valor.direccion;
+            this.email = valor.email;
         }
 
         public byte[] GenerarPdfDesdeLista(List<Cliente> elementos)
