@@ -56,3 +56,11 @@ C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\b
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -8,6 +8,5 @@
         public string? telefono { get; set; }
         public string? direccion { get; set; }
         public string? email { get; set; }
-        public UsuarioDTO? usuario { get; set; }
     }
 }

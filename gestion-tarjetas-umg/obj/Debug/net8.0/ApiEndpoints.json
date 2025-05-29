@@ -1,8 +1,29 @@
 [
   {
     "ContainingType": "gestion_tarjetas_umg.Controllers.ClienteController",
+    "Method": "ActualizarCliente",
+    "RelativePath": "api/Cliente/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dpi",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "aCliente",
+        "Type": "gestion_tarjetas_umg.Models.DTO.ClienteSimpleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.ClienteController",
     "Method": "BuscarCliente",
-    "RelativePath": "api/Cliente/Buscar",
+    "RelativePath": "api/Cliente/buscar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -32,6 +53,150 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.ClienteController",
+    "Method": "EliminarCliente",
+    "RelativePath": "api/Cliente/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dpi",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "AumentarLimiteCredito",
+    "RelativePath": "api/Tarjeta/AumentarLimiteCredito",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjetaConsulta",
+        "Type": "gestion_tarjetas_umg.Models.DTO.AumentarLimiteCreditoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "BloquearTarjeta",
+    "RelativePath": "api/Tarjeta/BloquearTarjeta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjetaConsulta",
+        "Type": "gestion_tarjetas_umg.Models.DTO.TarjetaConsultaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "CambioPin",
+    "RelativePath": "api/Tarjeta/CambioPin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cambioPinDTO",
+        "Type": "gestion_tarjetas_umg.Models.DTO.CambioPinDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "CobrarTarjeta",
+    "RelativePath": "api/Tarjeta/Cobrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cobroDTO",
+        "Type": "gestion_tarjetas_umg.Models.DTO.CobroPagoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "ConsultarMovimientos",
+    "RelativePath": "api/Tarjeta/ConsultarMovimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reporteriaTarjeta",
+        "Type": "gestion_tarjetas_umg.Models.DTO.ReporteriaTarjetaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "DesbloqueoTarjeta",
+    "RelativePath": "api/Tarjeta/DesbloqueoTarjeta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjetaConsulta",
+        "Type": "gestion_tarjetas_umg.Models.DTO.TarjetaConsultaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "PagarTarjeta",
+    "RelativePath": "api/Tarjeta/Pagar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PagoDTO",
+        "Type": "gestion_tarjetas_umg.Models.DTO.CobroPagoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.TarjetaController",
+    "Method": "RenovarTarjeta",
+    "RelativePath": "api/Tarjeta/RenovarTarjeta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjetaConsultaDTO",
+        "Type": "gestion_tarjetas_umg.Models.DTO.TarjetaConsultaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "gestion_tarjetas_umg.Controllers.UsuarioController",
     "Method": "listadoUsuarios",
     "RelativePath": "api/Usuario/listado",
@@ -39,6 +204,27 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gestion_tarjetas_umg.Controllers.UsuarioController",
+    "Method": "login",
+    "RelativePath": "api/Usuario/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

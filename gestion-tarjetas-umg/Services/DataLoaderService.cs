@@ -71,7 +71,7 @@ namespace gestion_tarjetas_umg.Services
                             descripcion = transaccionDTO.descripcion
                         };
 
-                        tarjeta.transacciones.Agregar(transaccion);
+                        tarjeta.transacciones.Insertar(transaccion);
                     }
 
                     cliente.Tarjetas.Agregar(tarjeta);

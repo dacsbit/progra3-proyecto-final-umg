@@ -45,7 +45,7 @@
         }
       }
     },
-    "/api/Cliente/Buscar": {
+    "/api/Cliente/buscar": {
       "get": {
         "tags": [
           "Cliente"
@@ -67,6 +67,317 @@
         }
       }
     },
+    "/api/Cliente/actualizar": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "dpi",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteSimpleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteSimpleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteSimpleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cliente/eliminar": {
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "dpi",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/Pagar": {
+      "post": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/Cobrar": {
+      "post": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CobroPagoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/ConsultarMovimientos": {
+      "get": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReporteriaTarjetaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReporteriaTarjetaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReporteriaTarjetaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/RenovarTarjeta": {
+      "get": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/CambioPin": {
+      "put": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambioPinDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambioPinDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CambioPinDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/BloquearTarjeta": {
+      "put": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/DesbloqueoTarjeta": {
+      "put": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TarjetaConsultaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tarjeta/AumentarLimiteCredito": {
+      "put": {
+        "tags": [
+          "Tarjeta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AumentarLimiteCreditoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AumentarLimiteCreditoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AumentarLimiteCreditoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuario/listado": {
       "get": {
         "tags": [
@@ -78,10 +389,98 @@
           }
         }
       }
+    },
+    "/api/Usuario/login": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AumentarLimiteCreditoDTO": {
+        "required": [
+          "anioExp",
+          "cvv",
+          "mesExp",
+          "numTarjeta"
+        ],
+        "type": "object",
+        "properties": {
+          "numTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "montoAumento": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CambioPinDTO": {
+        "required": [
+          "anioExp",
+          "cvv",
+          "mesExp",
+          "numTarjeta"
+        ],
+        "type": "object",
+        "properties": {
+          "numTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioExp": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "ClienteDTO": {
         "type": "object",
         "properties": {
@@ -118,6 +517,133 @@
           },
           "usuario": {
             "$ref": "#/components/schemas/UsuarioDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClienteSimpleDTO": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "dpi": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nit": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CobroPagoDTO": {
+        "required": [
+          "anioExp",
+          "cvv",
+          "mesExp",
+          "monto",
+          "numTarjeta"
+        ],
+        "type": "object",
+        "properties": {
+          "numTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReporteriaTarjetaDTO": {
+        "required": [
+          "anioExp",
+          "cvv",
+          "mesExp",
+          "numTarjeta"
+        ],
+        "type": "object",
+        "properties": {
+          "numTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFinal": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TarjetaConsultaDTO": {
+        "required": [
+          "anioExp",
+          "cvv",
+          "mesExp",
+          "numTarjeta"
+        ],
+        "type": "object",
+        "properties": {
+          "numTarjeta": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvv": {
+            "type": "string",
+            "nullable": true
+          },
+          "mesExp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "anioExp": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

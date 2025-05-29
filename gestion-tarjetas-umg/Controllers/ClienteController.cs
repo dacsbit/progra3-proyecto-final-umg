@@ -78,7 +78,7 @@ namespace gestion_tarjetas_umg.Controllers
                                 descripcion = transaccionDTO.descripcion
                             };
 
-                            tarjeta.transacciones.Agregar(transaccion);
+                            tarjeta.transacciones.Insertar(transaccion);
                         }
 
                         cliente.Tarjetas.Agregar(tarjeta);
@@ -86,7 +86,7 @@ namespace gestion_tarjetas_umg.Controllers
                 }                
 
                 // Guardar en estructuras de datos
-                _memoriaService.tHashUsuarios.Insertar(usuario.claveUnica, usuario);
+                _memoriaService.tHashUsuarios.Insertar(usuario.nombreUsuario, usuario);
                 _memoriaService.arbolClientes.Insertar(cliente);
             }
 
@@ -137,7 +137,7 @@ namespace gestion_tarjetas_umg.Controllers
         }
 
         [HttpPut("actualizar")]
-        public IActionResult ActualizarCliente(long dpi, [FromBody] ClienteDTO aCliente)
+        public IActionResult ActualizarCliente(long dpi, [FromBody] ClienteSimpleDTO aCliente)
         {
             Cliente bCliente = new Cliente
             {
@@ -150,7 +150,56 @@ namespace gestion_tarjetas_umg.Controllers
                 Usuario = null
             };
 
+            (NodoAvl<Cliente>? eCliente, bool encontrado) = _memoriaService.arbolClientes.Buscar(bCliente);
 
+            if (encontrado)
+            {
+                Cliente nCliente = new Cliente
+                {
+                    nombre = aCliente.nombre!,
+                    dpi = aCliente.dpi,
+                    nit = aCliente.nit!,
+                    telefono = aCliente.telefono!,
+                    direccion = aCliente.direccion!,
+                    email = aCliente.email!,
+                    Tarjetas = eCliente!.valor.Tarjetas,
+                    Usuario = eCliente.valor.Usuario,
+                };
+
+                bool actualizado = _memoriaService.arbolClientes.Modificar(eCliente.valor, nCliente);
+                if (actualizado)
+                {
+                    return Ok(new { msg = "Cliente actualizado correctamente", data = "null" });
+                }
+                else
+                {
+                    return Ok(new { msg = "Error en actalizacion", data = "null" });
+                }
+            }
+            else
+            {
+                return BadRequest(new { msg = "El DPI ingresado no pertenece a ningun cliente", data = aCliente });
+            }
+        }
+
+        [HttpDelete("eliminar")]
+        public IActionResult EliminarCliente(long dpi)
+        {
+            Cliente elCliente = new Cliente
+            {
+                nombre = "",
+                dpi = dpi,
+                nit = "",
+                telefono = "",
+                direccion = "",
+                email = "",
+                Usuario = null
+            };
+
+            bool eliminado = _memoriaService.arbolClientes.Eliminar(elCliente);
+            if (eliminado) return Ok(new { msg = "Cliente eliminado" });
+
+            return BadRequest(new { msg = "el dpi ingresado no pertenece a ningun cliente" });
         }
     }
 }
