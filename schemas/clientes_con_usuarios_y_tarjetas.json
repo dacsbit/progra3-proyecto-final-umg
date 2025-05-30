@@ -1,0 +1,576 @@
+[
+  {
+    "nombre": "Jonathan Smith",
+    "dpi": 9463971387467,
+    "nit": "21540189",
+    "telefono": "291-941-6792",
+    "direccion": "66739 Chambers Mill Apt. 742\nWoodsmouth, NC 80598",
+    "email": "teresahunt@pennington.biz",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "6533167598006211",
+        "cvv": "744",
+        "mesExp": 8,
+        "anioExp": 2027,
+        "nombreTarjeta": "Tonya Fletcher",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "05f3b509-fad1-4099-b651-21f2360ad62f",
+            "referencia": "1729810812",
+            "montoCredito": 0.0,
+            "montoDebito": 630.6,
+            "fecha": "2024-10-24T23:00:12",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "b72dde2a-233c-4dbe-9531-d405fa010199",
+            "referencia": "1738625590",
+            "montoCredito": 0,
+            "montoDebito": 85.28,
+            "fecha": "2025-02-03T23:33:10",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "52c6df4d-cb1b-43d7-b5aa-eb1e6353db44",
+            "referencia": "1718901062",
+            "montoCredito": 967.26,
+            "montoDebito": 0.0,
+            "fecha": "2024-06-20T16:31:02",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "charles78",
+      "contrasena": "^Z3QPewAF3"
+    }
+  },
+  {
+    "nombre": "Shannon Collins",
+    "dpi": 2333398478751,
+    "nit": "28746169",
+    "telefono": "+1-152-317-1297",
+    "direccion": "41349 Richardson Common Suite 453\nPort Sylviafurt, IN 40189",
+    "email": "george00@hotmail.com",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "4471986615960",
+        "cvv": "086",
+        "mesExp": 9,
+        "anioExp": 2026,
+        "nombreTarjeta": "Austin Garcia",
+        "red": "Visa",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "d3423a13-2d93-43ae-83d6-c63e7a3f3c0d",
+            "referencia": "1736588938",
+            "montoCredito": 727.02,
+            "montoDebito": 0.0,
+            "fecha": "2025-01-11T09:48:58",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "3f1d05de-d784-4498-ad73-4b11146be2f1",
+            "referencia": "1725169977",
+            "montoCredito": 620.57,
+            "montoDebito": 0.0,
+            "fecha": "2024-09-01T05:52:57",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "ac2a9dcc-c9ee-40bb-b7a1-326c5c0162bc",
+            "referencia": "1730971607",
+            "montoCredito": 0,
+            "montoDebito": 294.42,
+            "fecha": "2024-11-07T09:26:47",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "2ec312e3-29a4-442b-b54a-191d8ae0dcf7",
+            "referencia": "1736110420",
+            "montoCredito": 334.61,
+            "montoDebito": 0,
+            "fecha": "2025-01-05T20:53:40",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "582329297789",
+        "cvv": "774",
+        "mesExp": 12,
+        "anioExp": 2028,
+        "nombreTarjeta": "Tracy Ferguson",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "4a0f5dca-c617-4919-a60a-0cf8b07bcd43",
+            "referencia": "1739343757",
+            "montoCredito": 0,
+            "montoDebito": 194.88,
+            "fecha": "2025-02-12T07:02:37",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "da245826-c615-426b-b7e0-873ac801f1e0",
+            "referencia": "1715986112",
+            "montoCredito": 0,
+            "montoDebito": 448.28,
+            "fecha": "2024-05-17T22:48:32",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "7a17f64a-8ae9-41ad-aaff-2a9ba6d7e2e9",
+            "referencia": "1728776499",
+            "montoCredito": 0,
+            "montoDebito": 491.8,
+            "fecha": "2024-10-12T23:41:39",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "87d323f5-412d-49da-8279-90efe37e8a51",
+            "referencia": "1743501189",
+            "montoCredito": 612.61,
+            "montoDebito": 0.0,
+            "fecha": "2025-04-01T09:53:09",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "291f2bde-df34-4393-9526-997e496a4c5d",
+            "referencia": "1741043264",
+            "montoCredito": 0.0,
+            "montoDebito": 200.6,
+            "fecha": "2025-03-03T23:07:44",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "630485112944",
+        "cvv": "6192",
+        "mesExp": 6,
+        "anioExp": 2028,
+        "nombreTarjeta": "Maria Nguyen",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "74111897-eb2d-44cf-9b68-efbaab1213f1",
+            "referencia": "1715057061",
+            "montoCredito": 0.0,
+            "montoDebito": 331.26,
+            "fecha": "2024-05-07T04:44:21",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "b19caa90-019e-4035-bf4c-49e394bd2f34",
+            "referencia": "1730030528",
+            "montoCredito": 434.46,
+            "montoDebito": 0.0,
+            "fecha": "2024-10-27T12:02:08",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "walkerjessica",
+      "contrasena": "gf7xzJiq^_"
+    }
+  },
+  {
+    "nombre": "Amber Parker",
+    "dpi": 5390849545964,
+    "nit": "14224930",
+    "telefono": "+1-039-995-9925",
+    "direccion": "8667 Small Grove Suite 531\nJodiland, NC 94304",
+    "email": "kimberlynorris@sullivan.com",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "30447753990115",
+        "cvv": "080",
+        "mesExp": 5,
+        "anioExp": 2026,
+        "nombreTarjeta": "James Holt",
+        "red": "Amex",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "89ebffee-9c26-48a2-a9f9-e053a03cb814",
+            "referencia": "1738057612",
+            "montoCredito": 0.0,
+            "montoDebito": 146.19,
+            "fecha": "2025-01-28T09:46:52",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "53d0c8bf-f153-4d0d-a56a-ecf91155968a",
+            "referencia": "1720406953",
+            "montoCredito": 0.0,
+            "montoDebito": 815.96,
+            "fecha": "2024-07-08T02:49:13",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "3510909853856333",
+        "cvv": "908",
+        "mesExp": 1,
+        "anioExp": 2025,
+        "nombreTarjeta": "Leah Johnson",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "23546082-62e2-4f6a-a288-48b11919ee95",
+            "referencia": "1728588351",
+            "montoCredito": 442.58,
+            "montoDebito": 0,
+            "fecha": "2024-10-10T19:25:51",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "5e1b25bd-4d3e-4ee6-8327-a39dc1543458",
+            "referencia": "1719194348",
+            "montoCredito": 0.0,
+            "montoDebito": 851.77,
+            "fecha": "2024-06-24T01:59:08",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "4e34c972-f831-41b2-a945-2d23c40aef2e",
+            "referencia": "1733677254",
+            "montoCredito": 615.86,
+            "montoDebito": 0.0,
+            "fecha": "2024-12-08T17:00:54",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "5953fb40-f35f-4c0c-9d34-1b78a0cb5397",
+            "referencia": "1730865944",
+            "montoCredito": 244.86,
+            "montoDebito": 0.0,
+            "fecha": "2024-11-06T04:05:44",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "0790a22a-9532-4e6b-b749-74c79de9c73b",
+            "referencia": "1743992072",
+            "montoCredito": 0.0,
+            "montoDebito": 831.09,
+            "fecha": "2025-04-07T02:14:32",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "kochgary",
+      "contrasena": ")G1zFIyX0i"
+    }
+  },
+  {
+    "nombre": "Matthew Perez",
+    "dpi": 2452955496565,
+    "nit": "64191213",
+    "telefono": "183.935.7514x4335",
+    "direccion": "748 Austin Club\nHunterville, IA 78932",
+    "email": "donnaford@hawkins-white.com",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "30162893082117",
+        "cvv": "638",
+        "mesExp": 6,
+        "anioExp": 2029,
+        "nombreTarjeta": "Rebecca Fuller",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "313fce2c-ef36-4464-9c03-dd6347a6c43b",
+            "referencia": "1726637412",
+            "montoCredito": 122.5,
+            "montoDebito": 0,
+            "fecha": "2024-09-18T05:30:12",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "c51a6d50-65f4-4444-9203-f9da937aa0c2",
+            "referencia": "1720261823",
+            "montoCredito": 0.0,
+            "montoDebito": 868.45,
+            "fecha": "2024-07-06T10:30:23",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "213145528968445",
+        "cvv": "321",
+        "mesExp": 10,
+        "anioExp": 2027,
+        "nombreTarjeta": "David Scott",
+        "red": "Amex",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "e6303e93-4fce-4d83-b9dd-b69b1b42464c",
+            "referencia": "1720924268",
+            "montoCredito": 406.4,
+            "montoDebito": 0,
+            "fecha": "2024-07-14T02:31:08",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "0b90f6da-f176-4460-b06c-76eb32414862",
+            "referencia": "1727067439",
+            "montoCredito": 0,
+            "montoDebito": 473.79,
+            "fecha": "2024-09-23T04:57:19",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "526ebcb7-efef-41c2-ae3f-d69551351537",
+            "referencia": "1719790169",
+            "montoCredito": 0,
+            "montoDebito": 462.79,
+            "fecha": "2024-06-30T23:29:29",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "213127738903305",
+        "cvv": "372",
+        "mesExp": 8,
+        "anioExp": 2025,
+        "nombreTarjeta": "Taylor Ayala",
+        "red": "Visa",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "acc2a636-f060-4c24-b04c-2238a5904b0e",
+            "referencia": "1737289744",
+            "montoCredito": 647.71,
+            "montoDebito": 0.0,
+            "fecha": "2025-01-19T12:29:04",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "480e04ef-1f7b-44f1-801a-475f86a72a56",
+            "referencia": "1735284016",
+            "montoCredito": 466.49,
+            "montoDebito": 0,
+            "fecha": "2024-12-27T07:20:16",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "hwheeler",
+      "contrasena": "*tO9dt@I@7"
+    }
+  },
+  {
+    "nombre": "Pamela Francis",
+    "dpi": 2634028368644,
+    "nit": "10606594",
+    "telefono": "578.785.5792x18886",
+    "direccion": "77285 Deanna Plaza Apt. 788\nLake Laura, RI 66445",
+    "email": "ygallagher@yahoo.com",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "180040430412260",
+        "cvv": "246",
+        "mesExp": 4,
+        "anioExp": 2025,
+        "nombreTarjeta": "John Miller",
+        "red": "Visa",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "f0a4c793-5a5d-405d-913c-3826c03bf762",
+            "referencia": "1744876301",
+            "montoCredito": 0.0,
+            "montoDebito": 759.55,
+            "fecha": "2025-04-17T07:51:41",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "d859bf69-58c6-4055-b43a-fca4982ab49b",
+            "referencia": "1722439595",
+            "montoCredito": 770.69,
+            "montoDebito": 0.0,
+            "fecha": "2024-07-31T15:26:35",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "213151825440815",
+        "cvv": "6524",
+        "mesExp": 11,
+        "anioExp": 2027,
+        "nombreTarjeta": "Bruce Johnson",
+        "red": "Amex",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "021e423b-7f88-436c-8952-0fae6a9f8a9b",
+            "referencia": "1718978123",
+            "montoCredito": 0,
+            "montoDebito": 197.13,
+            "fecha": "2024-06-21T13:55:23",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "b9ca2bf7-3a66-4680-a12f-b47941992eb9",
+            "referencia": "1718910761",
+            "montoCredito": 0.0,
+            "montoDebito": 220.55,
+            "fecha": "2024-06-20T19:12:41",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "cf37e6f2-7702-4e96-a636-6fb96bd04587",
+            "referencia": "1741625549",
+            "montoCredito": 0,
+            "montoDebito": 444.09,
+            "fecha": "2025-03-10T16:52:29",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "44e0863c-5ef9-4ec1-997c-ef0d650edd0e",
+            "referencia": "1733752879",
+            "montoCredito": 0.0,
+            "montoDebito": 829.7,
+            "fecha": "2024-12-09T14:01:19",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "d8ac4dae-5f31-46dc-9522-8f95976f7208",
+            "referencia": "1728219808",
+            "montoCredito": 632.55,
+            "montoDebito": 0.0,
+            "fecha": "2024-10-06T13:03:28",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "6594534323696192",
+        "cvv": "240",
+        "mesExp": 8,
+        "anioExp": 2025,
+        "nombreTarjeta": "Jesse Smith",
+        "red": "Amex",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "9d5c7d2c-ace2-4c38-a8e3-fc027965e35a",
+            "referencia": "1740987504",
+            "montoCredito": 0,
+            "montoDebito": 228.15,
+            "fecha": "2025-03-03T07:38:24",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "b5c74ffc-3157-49b7-a59d-8d62c88bf516",
+            "referencia": "1732938820",
+            "montoCredito": 0,
+            "montoDebito": 66.19,
+            "fecha": "2024-11-30T03:53:40",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "schan",
+      "contrasena": "5zj#8DScmY"
+    }
+  },
+  {
+    "nombre": "Kaylee Carpenter",
+    "dpi": 7129345232332,
+    "nit": "22158177",
+    "telefono": "590-682-2438x55741",
+    "direccion": "687 Blevins Village\nHaleborough, MA 13776",
+    "email": "hfrancis@garcia-townsend.info",
+    "listaTarjetas": [
+      {
+        "numeroTarjeta": "4549519943583442",
+        "cvv": "635",
+        "mesExp": 4,
+        "anioExp": 2025,
+        "nombreTarjeta": "Patricia Gray",
+        "red": "Amex",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "5e5c42c9-52cf-418a-ad6f-22be0a8b1c03",
+            "referencia": "1730427259",
+            "montoCredito": 0,
+            "montoDebito": 185.75,
+            "fecha": "2024-11-01T02:14:19",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "ecfd09b5-ac74-4154-aaae-1d6eb7629527",
+            "referencia": "1744804385",
+            "montoCredito": 0,
+            "montoDebito": 276.68,
+            "fecha": "2025-04-16T11:53:05",
+            "descripcion": "Cobro a tarjeta"
+          }
+        ]
+      },
+      {
+        "numeroTarjeta": "639099271640",
+        "cvv": "862",
+        "mesExp": 4,
+        "anioExp": 2027,
+        "nombreTarjeta": "Jesse Payne",
+        "red": "MasterCard",
+        "pin": 123,
+        "transacciones": [
+          {
+            "id": "f591b38d-9c3b-4f23-9ef4-9fdc4788a05a",
+            "referencia": "1738264758",
+            "montoCredito": 0.0,
+            "montoDebito": 750.41,
+            "fecha": "2025-01-30T19:19:18",
+            "descripcion": "Cobro a tarjeta"
+          },
+          {
+            "id": "d3afd1ed-1c9a-44a7-842b-98a8d0c9b2b9",
+            "referencia": "1734950641",
+            "montoCredito": 447.5,
+            "montoDebito": 0.0,
+            "fecha": "2024-12-23T10:44:01",
+            "descripcion": "Pago a tarjeta de crédito"
+          },
+          {
+            "id": "dc499423-e22e-45ed-8e79-05d6e95a1ecf",
+            "referencia": "1723800927",
+            "montoCredito": 430.03,
+            "montoDebito": 0.0,
+            "fecha": "2024-08-16T09:35:27",
+            "descripcion": "Pago a tarjeta de crédito"
+          }
+        ]
+      }
+    ],
+    "usuario": {
+      "nombreUsuario": "ithomas",
+      "contrasena": ")(0nTShtCt"
+    }
+  }
+]

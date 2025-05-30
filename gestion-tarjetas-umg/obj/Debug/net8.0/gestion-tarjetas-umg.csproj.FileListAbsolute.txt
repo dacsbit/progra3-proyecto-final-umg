@@ -64,3 +64,5 @@ C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\b
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\bin\Debug\net8.0\gestion-tarjetas-umg.xml
+C:\Users\dacs_\Documents\Repos\progra3-proyecto-final-umg\gestion-tarjetas-umg\obj\Debug\net8.0\gestion-tarjetas-umg.xml

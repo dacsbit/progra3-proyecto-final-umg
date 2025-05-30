@@ -87,7 +87,7 @@ namespace gestion_tarjetas_umg.Models.Domain
             // SALDO INICIAL
             foreach (var movimiento in movimientos)
             {
-                if (movimiento.fecha.Date < fechaInicio)
+                if (movimiento.fecha.Date < fechaInicio.Date)
                 {
                     saldoCalculado += movimiento.montoCredito - movimiento.montoDebito;
                 }
@@ -114,7 +114,7 @@ namespace gestion_tarjetas_umg.Models.Domain
 
             foreach (var movimiento in movimientos)
             {
-                if (movimiento.fecha.Date >= fechaInicio && movimiento.fecha.Date <= fechaFinal)
+                if (movimiento.fecha.Date >= fechaInicio.Date && movimiento.fecha.Date <= fechaFinal.Date)
                 {
                     saldoCalculado += movimiento.montoCredito - movimiento.montoDebito;
 
@@ -136,7 +136,7 @@ namespace gestion_tarjetas_umg.Models.Domain
             // SALDO FINAL
             foreach (var movimiento in movimientos)
             {
-                if (movimiento.fecha.Date > fechaFinal)
+                if (movimiento.fecha.Date > fechaFinal.Date)
                 {
                     saldoCalculado += movimiento.montoCredito - movimiento.montoDebito;
                 }

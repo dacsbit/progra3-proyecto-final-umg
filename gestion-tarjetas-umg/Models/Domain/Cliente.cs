@@ -84,5 +84,63 @@ namespace gestion_tarjetas_umg.Models.Domain
 
             return ms.ToArray();
         }
+
+        public byte[] ListadoTarjetas()
+        {
+            using MemoryStream ms = new();
+            using PdfWriter writer = new(ms);
+            using PdfDocument pdf = new(writer);
+            Document doc = new(pdf);
+
+            // TÍTULO
+            var titulo = new Paragraph("Lista de Tarjetas")
+                .SetFontSize(20)
+                .SimulateBold()
+                .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER);
+            doc.Add(titulo);
+
+            // Fecha de datos de reporte
+            var fechaGeneracion = DateTime.UtcNow.ToString("dd/MM/yyyy HH:mm:ss");
+            doc.Add(new Paragraph($"Fecha de generación del reporte: {fechaGeneracion}"));
+            doc.Add(new Paragraph($"Cliente: {this.nombre}"));
+            doc.Add(new Paragraph($"DPI: {this.dpi}"));
+            doc.Add(new Paragraph($"NIT: {this.nit}"));
+
+            // Espaciado
+            doc.Add(new Paragraph("\n"));
+
+            List<Tarjeta> tarjetasCliente = this.Tarjetas.ToList();
+            
+            // TABLA DE TARJETAS
+            Table tabla = new(9);
+
+            tabla.AddHeaderCell("# Tarjeta");
+            tabla.AddHeaderCell("CVV");
+            tabla.AddHeaderCell("Expira");
+            tabla.AddHeaderCell("Nombre");
+            tabla.AddHeaderCell("Red");
+            tabla.AddHeaderCell("PIN");
+            tabla.AddHeaderCell("Limite de Credito");
+            tabla.AddHeaderCell("Activa");
+            tabla.AddHeaderCell("Bloqueada");
+
+            foreach (var tarjeta in tarjetasCliente)
+            {
+                tabla.AddCell($"**** **** **** {tarjeta.numeroTarjeta[^4..]}");
+                tabla.AddCell(tarjeta.cvv);
+                tabla.AddCell($"{tarjeta.mesExp:D2}/{tarjeta.anioExp % 100:D2}");
+                tabla.AddCell(tarjeta.nombreTarjeta);
+                tabla.AddCell(tarjeta.red);
+                tabla.AddCell($"{tarjeta.pin}");
+                tabla.AddCell($"Q.{tarjeta.limiteCredito}");
+                tabla.AddCell(tarjeta.activa ? "SI" :"NO");
+                tabla.AddCell(tarjeta.bloqueada ? "SI" :"NO");
+            }
+
+            doc.Add(tabla);
+            doc.Close();
+
+            return ms.ToArray();
+        }
     }
 }

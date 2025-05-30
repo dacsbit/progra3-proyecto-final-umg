@@ -1,4 +1,6 @@
 ﻿using gestion_tarjetas_umg.Models.Domain;
+using gestion_tarjetas_umg.Models.DTO;
+using gestion_tarjetas_umg.Models.Responses;
 using gestion_tarjetas_umg.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +21,7 @@ namespace gestion_tarjetas_umg.Controllers
         }
 
         [HttpGet("listado")]
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
         public IActionResult listadoUsuarios()
         {
             List<Usuario> listaUsuarios = _memoriaService.tHashUsuarios.ToList();
@@ -33,28 +36,30 @@ namespace gestion_tarjetas_umg.Controllers
 
             string pdfString =  Convert.ToBase64String(pdfBytes);
 
-            return StatusCode(StatusCodes.Status200OK, new { IsSuccess = true, pdf = pdfString });
+            return Ok(new Respuesta<string>{ IsSuccess = true, Data = pdfString });
         }
 
-        [HttpGet("login")]
-        public IActionResult login(string username, string password)
+        [HttpPost("login")]
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 400)]
+        public IActionResult login([FromBody] LoginDTO login)
         {
-            (Usuario? lUsuario, bool encontrado) = _memoriaService.tHashUsuarios.Obtener(username);
+            (Usuario? lUsuario, bool encontrado) = _memoriaService.tHashUsuarios.Obtener(login.username);
 
             if (encontrado && lUsuario != null)
             {
-                if (lUsuario.contrasena == password)
+                if (lUsuario.contrasena == login.password)
                 {
-                    return Ok(new { IsSuccess = true, token = _seguridadService.generarJwt(lUsuario) });
+                    return Ok(new Respuesta<string>{ IsSuccess = true, Data = _seguridadService.generarJwt(lUsuario), Msg="Inicio de sesion correcto" });
                 }
                 else
                 {
-                    return BadRequest(new { IsSuccess = false, token = "", msg = "Nombre de usuario o contraseña incorrecta" });
+                    return BadRequest(new Respuesta<string> { IsSuccess = false, Data = "", Msg = "Nombre de usuario o contraseña incorrecta" });
                 }
             }
             else
             {
-                return BadRequest(new { IsSuccess = false, token = "", msg = "Nombre de usuario o contraseña incorrecta" });
+                return BadRequest(new Respuesta<string> { IsSuccess = false, Data = "", Msg = "Nombre de usuario o contraseña incorrecta" });
             }
         }
 

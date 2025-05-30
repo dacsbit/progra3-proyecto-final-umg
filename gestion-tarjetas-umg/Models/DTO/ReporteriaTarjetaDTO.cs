@@ -1,8 +1,12 @@
 ﻿namespace gestion_tarjetas_umg.Models.DTO
 {
-    public class ReporteriaTarjetaDTO : TarjetaConsultaDTO
+    public class ReporteriaTarjetaDTO
     {
-        public DateTime fechaInicio {  get; set; }
-        public DateTime fechaFinal {  get; set; }
+        public required string numTarjeta { get; set; }
+        public required string cvv { get; set; }
+        public required int mesExp { get; set; }
+        public required int anioExp { get; set; }
+        public DateTime fechaInicio { get; set; }
+        public DateTime fechaFinal { get; set; }
     }
 }

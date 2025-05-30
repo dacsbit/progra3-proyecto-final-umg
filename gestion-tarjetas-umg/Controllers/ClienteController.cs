@@ -1,6 +1,7 @@
 ﻿using gestion_tarjetas_umg.Models.Domain;
 using gestion_tarjetas_umg.Models.DTO;
 using gestion_tarjetas_umg.Models.Estructuras.Arboles.AVL;
+using gestion_tarjetas_umg.Models.Responses;
 using gestion_tarjetas_umg.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,10 +21,11 @@ namespace gestion_tarjetas_umg.Controllers
         }
 
         [HttpPost("crear")]
-
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 400)]
         public IActionResult CrearCliente([FromBody] List<ClienteDTO> clientesDto)
         {
-            if (clientesDto == null || clientesDto.Count == 0) return BadRequest("No se recibio informacion valida");
+            if (clientesDto == null || clientesDto.Count == 0) return BadRequest(new Respuesta<string> { IsSuccess = false, Msg = "No se recibio informacion valida", Data = "null" });
             
 
             foreach (var clienteDTO in clientesDto)
@@ -90,10 +92,13 @@ namespace gestion_tarjetas_umg.Controllers
                 _memoriaService.arbolClientes.Insertar(cliente);
             }
 
-            return Ok("Datos cargados correctamente");
+            return Ok(new Respuesta<string> { IsSuccess = true, Msg = "Datos cargados correctamente", Data = "null" });
         }
 
+
         [HttpGet("buscar")]
+        [ProducesResponseType(typeof(Respuesta<Cliente>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 404)]
         public IActionResult BuscarCliente(long dpi)
         {
             Cliente bCliente = new Cliente
@@ -128,15 +133,18 @@ namespace gestion_tarjetas_umg.Controllers
                         Cliente = null
                     }
                 };
-                return Ok(bCliente);
+                return Ok(new Respuesta<Cliente> { IsSuccess = true, Data = bCliente });
             }
             else
             {
-                return Ok("Cliente no encontrado");
+                return NotFound(new Respuesta<string> { IsSuccess = false, Msg = "Cliente no encontrado", Data = "null" });
             }
         }
 
         [HttpPut("actualizar")]
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 400)]
+        [ProducesResponseType(typeof(Respuesta<ClienteSimpleDTO>), 409)]
         public IActionResult ActualizarCliente(long dpi, [FromBody] ClienteSimpleDTO aCliente)
         {
             Cliente bCliente = new Cliente
@@ -169,20 +177,22 @@ namespace gestion_tarjetas_umg.Controllers
                 bool actualizado = _memoriaService.arbolClientes.Modificar(eCliente.valor, nCliente);
                 if (actualizado)
                 {
-                    return Ok(new { msg = "Cliente actualizado correctamente", data = "null" });
+                    return Ok(new Respuesta<string>{IsSuccess = true, Msg = "Cliente actualizado correctamente", Data = "null" });
                 }
                 else
                 {
-                    return Ok(new { msg = "Error en actalizacion", data = "null" });
+                    return Conflict(new Respuesta<string> { IsSuccess = false, Msg = "Error en actualizacion", Data = "null" });
                 }
             }
             else
             {
-                return BadRequest(new { msg = "El DPI ingresado no pertenece a ningun cliente", data = aCliente });
+                return BadRequest(new Respuesta<ClienteSimpleDTO> { IsSuccess = false, Msg = "El DPI ingresado no pertenece a ningun cliente", Data = aCliente });
             }
         }
 
         [HttpDelete("eliminar")]
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 400)]
         public IActionResult EliminarCliente(long dpi)
         {
             Cliente elCliente = new Cliente
@@ -197,9 +207,37 @@ namespace gestion_tarjetas_umg.Controllers
             };
 
             bool eliminado = _memoriaService.arbolClientes.Eliminar(elCliente);
-            if (eliminado) return Ok(new { msg = "Cliente eliminado" });
+            if (eliminado) return Ok(new Respuesta<string> {IsSuccess = true, Msg = "Cliente eliminado", Data = "null" });
 
-            return BadRequest(new { msg = "el dpi ingresado no pertenece a ningun cliente" });
+            return BadRequest(new Respuesta<string> {IsSuccess = false, Msg = "el DPI ingresado no pertenece a ningun cliente", Data = "null" });
+        }
+
+        [HttpGet("ReporteTarjetas")]
+        [ProducesResponseType(typeof(Respuesta<string>), 200)]
+        [ProducesResponseType(typeof(Respuesta<string>), 404)]
+        public IActionResult ReporteTarjetas(long dpi)
+        {
+            (NodoAvl<Cliente>? nEncontrado, bool encontrado) = _memoriaService.arbolClientes.Buscar(new Cliente
+            {
+                nombre = "",
+                dpi = dpi,
+                nit = "",
+                telefono = "",
+                direccion = "",
+                email = "",
+                Usuario = null
+            });
+
+            if (encontrado)
+            {
+                byte[] pdfBytes = nEncontrado!.valor.ListadoTarjetas();
+                string pdfString = Convert.ToBase64String(pdfBytes);
+                return Ok(new Respuesta<string> { IsSuccess = true, Data = pdfString });
+            }
+            else
+            {
+                return NotFound(new Respuesta<string> { IsSuccess = false, Msg = "Cliente no encontrado", Data = "null" });
+            }
         }
     }
 }
