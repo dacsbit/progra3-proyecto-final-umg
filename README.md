@@ -117,3 +117,6 @@ Todos los endpoints sensibles requieren autorización mediante un token válido.
 
 Proyecto desarrollado como entrega final para la materia de **Programación 3**.  
 Puedes reutilizarlo con fines educativos o personales.
+
+## Videotutorial del funcionamiento de la API
+[Videotutorial](https://drive.google.com/file/d/1WGvW_Uhho5XM9k8qPQXjFIHPyKqFM8ua/view?usp=sharing)
