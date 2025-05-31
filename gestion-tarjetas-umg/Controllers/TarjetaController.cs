@@ -440,7 +440,7 @@ namespace gestion_tarjetas_umg.Controllers
                 {
                     tarjetaCliente.valor.limiteCredito = tarjetaConsulta.MontoAumento;
 
-                    return Ok(new Respuesta<string> { IsSuccess = true, Msg = "Bloqueo de tarjeta exitoso", Data = "null" });
+                    return Ok(new Respuesta<string> { IsSuccess = true, Msg = "Se aumento el limite de credito", Data = "null" });
                 }
                 else
                 {
