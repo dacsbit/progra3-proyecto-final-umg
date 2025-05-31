@@ -386,7 +386,7 @@ namespace gestion_tarjetas_umg.Controllers
                 {
                     tarjetaCliente.valor.bloqueada = false;
 
-                    return Ok(new Respuesta<string> { IsSuccess = true, Msg = "Bloqueo de tarjeta exitoso", Data = "null" });
+                    return Ok(new Respuesta<string> { IsSuccess = true, Msg = "Desbloqueo de tarjeta exitoso", Data = "null" });
                 }
                 else
                 {
