@@ -101,7 +101,7 @@ namespace gestion_tarjetas_umg.Controllers
                     montoCredito = 0.00,
                     montoDebito = cobroDTO.monto,
                     fecha = DateTime.UtcNow,
-                    descripcion = "Pago de tarjeta"
+                    descripcion = "Cobro de tarjeta"
                 };
 
                 tarjeta.transacciones.Insertar(transaccionCobro);
@@ -213,7 +213,7 @@ namespace gestion_tarjetas_umg.Controllers
                 {
                     int diaFinalMes = DateTime.DaysInMonth(tarjetaCliente.valor.anioExp, tarjetaCliente.valor.mesExp);
                     DateTime fechaExp = new(tarjetaCliente.valor.anioExp, tarjetaCliente.valor.mesExp, diaFinalMes);
-                    if (DateTime.UtcNow.Date > fechaExp) 
+                    if (DateTime.UtcNow.Date < fechaExp.Date) 
                         return BadRequest(new Respuesta<string>{ IsSuccess = false, Msg = "Solo se puede renovar una tarjeta expirada", Data = "null" });
                     tarjetaCliente.valor.activa = false;
 
